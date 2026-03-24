@@ -1,13 +1,26 @@
+<?php
+$page = $_GET["page"] ?? "home";
+?>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Profil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGACE -->
 <nav>
     <a href="?page=home">Domů</a>
     <a href="?page=interests">Zájmy</a>
     <a href="?page=skills">Dovednosti</a>
 </nav>
+
 <hr>
 
+<!-- ROUTING -->
 <?php
-$page = $_GET["page"] ?? "home";
-
 switch ($page) {
     case "home":
         require "pages/home.php";
@@ -26,3 +39,6 @@ switch ($page) {
         break;
 }
 ?>
+
+</body>
+</html>
