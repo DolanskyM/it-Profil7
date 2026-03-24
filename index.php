@@ -1,3 +1,10 @@
+<nav>
+    <a href="?page=home">Domů</a>
+    <a href="?page=interests">Zájmy</a>
+    <a href="?page=skills">Dovednosti</a>
+</nav>
+<hr>
+
 <?php
 $page = $_GET["page"] ?? "home";
 
